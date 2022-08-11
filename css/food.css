@@ -92,6 +92,10 @@ html, body {
     background-size: 100%;
 }
 
+.sub-header:hover {
+    background-image: url(/white-rice.jpg);
+}
+
 .nav-bar {
     display: none !important;
     color: gold;
@@ -120,6 +124,10 @@ html, body {
     text-align: center;
     font-size: 40px;
     width: auto;
+}
+
+.menu:hover {
+    letter-spacing: 40px;
 }
 
 .line {
@@ -195,12 +203,12 @@ ul > li {
     gap: 20px;
     width: 100%;
     padding-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .food-order {
     display: flex;
     width: 100%;
-
 }
 
 .food {
@@ -211,7 +219,6 @@ ul > li {
     padding: 30px;
     align-items: center;
     text-align: center;
-
 }
 
 
