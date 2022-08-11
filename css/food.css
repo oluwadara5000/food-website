@@ -67,7 +67,7 @@ html, body {
 }
 
 .bar {
-    list-style-type: none;
+    /*list-style-type: none;*/
     display: flex;
     color: gold;
     transition: ease-in-out;
@@ -183,6 +183,7 @@ ul > li {
     font-family: Macondo;
 }
 
+
 .order {
     padding-top: 2px;
     background-color: black;
@@ -196,34 +197,44 @@ ul > li {
     padding-bottom: 30px;
 }
 
+.food-order {
+    display: flex;
+    width: 100%;
+
+}
+
 .food {
     background-color: black;
     color: gold;
+    display: flex;
     width: 100%;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+
 }
 
-.order:hover {
-    background-color: gold;
-    color: black;
-}
 
 .order-heading {
     font-family: Fascinate;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 15px;
+    background-color: black;
+    color: gold;
+    margin: 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .order-sub-heading {
+    background-color: black;
     font-family: Katibeh;
-    font-size: 35px;
-    letter-spacing: 10px;
-    margin-bottom: -10px;
-}
-
-.food-order {
-    width: 80%;
+    margin: 0;
+    color: gold;
     text-align: center;
-    align-items: center;
+    letter-spacing: 10px;
+    font-size: 40px;
 }
 
 label {
@@ -231,7 +242,13 @@ label {
     letter-spacing: 7px;
     font-size: 15px;
     align-items: center;
-    padding-left: 50px;
+    padding-left: 15px;
+}
+
+.order-line {
+    border: 1px solid red;
+    width: 95%;
+    margin-top: -15px;
 }
 
 
@@ -295,18 +312,20 @@ label {
         letter-spacing: 6.5px;
     }
 
-    .order-sub-heading {
-        font-size: 18px;
-        letter-spacing: 2px;
-        margin-bottom: -25px;
-    }
-
     label {
         letter-spacing: 2px;
-        font-size: 10px;
-        padding-left: 10px;
+        font-size: 8px;
     }
 
+    .food {
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .order-sub-heading {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }    
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -358,27 +377,17 @@ label {
         line-height: 30px;
     }
 
-    .order-heading {
-        font-size: 15px;
-        letter-spacing: 6.5px;
-    }
-
-    .order-sub-heading {
-        font-size: 18px;
-        letter-spacing: 2px;
-        margin-bottom: -25px;
-    }
-
-    .food-order {
-        text-align: center;
-        justify-content: center;
-       
+    .food {
+        padding: 5px;
+        padding-left: 10px;
     }
 
     label {
-        letter-spacing: 2px;
         font-size: 10px;
-        align-items: center;
-        padding-left: 50px;
     }
+
+    .order-sub-heading {
+        font-size: 30px;
+    }
+
 }
