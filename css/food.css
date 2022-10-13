@@ -50,32 +50,32 @@ html, body {
     background-color: black;
     position: sticky;
     width: 100%;
-    padding: 5px 0;
+    padding: 10px;
     top: 0;
-
 }
 
 .headers {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 .icon {
     color: gold;
     display: block;
+    padding: 10px;
 }
 
 .bar {
     /*list-style-type: none;*/
     display: flex;
     color: gold;
-    transition: ease-in-out;
-    
+    transition: ease-in-out;  
 }
 
 .bar > li {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -92,13 +92,14 @@ html, body {
     background-size: 100%;
 }
 
-.sub-header:hover {
+/*.sub-header:hover {
     background-image: url(/white-rice.jpg);
-}
+}*/
 
 .nav-bar {
     display: none !important;
     color: gold;
+    padding: 10px;
 }
 
 .main-title {
@@ -126,9 +127,9 @@ html, body {
     width: auto;
 }
 
-.menu:hover {
+/*.menu:hover {
     letter-spacing: 40px;
-}
+}*/
 
 .line {
     border: 1px solid red;
@@ -154,12 +155,12 @@ html, body {
     width: 50%;
 }
 
-.left-column:hover {
+/*.left-column:hover {
     background-color: gold;
     color: black;
     width: 100%;
     display: hidden;
-}
+}*/
 
 
 .right-column {
@@ -170,11 +171,11 @@ html, body {
     width: 50%;
 }
 
-.right-column:hover {
+/*.right-column:hover {
     background-color: gold;
     color: black;
     width: 100%;
-}
+}*/
 
 .heading {
     font-size: 30px;

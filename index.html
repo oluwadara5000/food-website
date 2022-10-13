@@ -22,7 +22,11 @@
 
           <!--<h1 class="icon"></h1>-->
         </div>
-        <i class="fa fa-bars nav-bar fa-3x"></i>
+
+        <div id="nav-bar" onclick="myNavBar()">
+          <i class="fa fa-bars nav-bar fa-3x"></i>
+        </div>
+
         <div class="header-links">
           <ul class="bar">
             <li><i class="fa fa-home home"></i>Home</li>
@@ -105,6 +109,12 @@
         </ul>
       </div>
     </div>
+
+    <script>
+      function myNavBar() {
+        document.getElementById("nav-bar").style.display = "none";
+      }
+    </script>
 
     <h1 class="order-heading">Make Your Order Here</h1>
 
